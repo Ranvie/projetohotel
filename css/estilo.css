@@ -77,3 +77,19 @@ body{
         display: block;
     }
 }
+
+.jumbotron{
+    background-color: #E8E8E8;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.parallax{
+    background-image: url("../img/hotel-banner.webp");
+    height: 400px;
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
