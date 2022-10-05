@@ -33,15 +33,23 @@ legend{
     margin: 10px;
 }
 
-.toggle-dropdown-button{
+.dropdown-button{
     display: flex;
     align-self: center;
     text-align: right;
     display: none !important;
 }
 
-.toggle-dropdown-button img{
-    height: 30px;
+.dropdown-button img{
+    height: 20px;
+}
+
+.collapsed{
+    display: block !important;
+}
+
+.hidden{
+    display: none !important;
 }
 
 .header-menu{
@@ -67,11 +75,10 @@ legend{
 }
 
 @media (max-width: 575px){
-    .toggle-dropdown-button{
+    .dropdown-button{
         display: block !important;
     }
-
-    .toggle-dropdown-button img{
+    .dropdown-button img{
         display: inline;
     }
     .header-menu li{
