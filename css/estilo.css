@@ -8,12 +8,16 @@ body{
     background-color: #E8E8E8;
 }
 
-#header{
-    background-color: #8A1010;
+fieldset{
+    border: black solid 1px;
 }
 
-#main{
+legend{
+    width: auto;
+}
 
+#header{
+    background-color: #8A1010;
 }
 
 #footer{
@@ -191,4 +195,117 @@ body{
 .carousel-item img{
     height: 200px;
     width: 800px;
+}
+
+.user-basic-info{
+    padding: 15px;
+}
+
+.user-basic-info input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.user-basic-info .arrival-input input{
+    width: 25%;
+}
+
+@media (max-width: 576px){
+    .user-basic-info .arrival-input input{
+        width: 35%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    .user-basic-info .arrival-input input{
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 996px){
+    .user-basic-info .arrival-input input{
+        width: 35%;
+    }
+}
+
+.user-basic-info .radio-input input{
+    width: auto;
+}
+
+.checkout{
+    margin-top: 20px;
+    background-clip: content-box;
+    background-color: white;
+    height: 300px;
+}
+
+.checkout h1{
+    text-align: center;
+    margin: 0 5px;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.checkout h2{
+    margin: 0 5px;
+    font-size: 1.5em;
+}
+
+.checkout .new-item{
+    margin: 0 10px;
+    border-bottom: gray solid 1px;
+}
+
+.checkout .new-item p{
+    color: lightslategray;
+}
+
+.checkout .new-item p.green-text{
+    text-align: center;
+    color: rgb(0, 173, 0);
+}
+
+.checkout .total{
+    text-align: center;
+}
+
+.checkout .total div{
+    height: 100%;
+    vertical-align: bottom;
+    margin-top: 6%;
+}
+
+.checkout .total div p, button{
+    padding: 0;
+    margin: 0;
+}
+
+.checkout .total div button{
+    width: 40%;
+}
+
+.payment{
+    padding: 15px;
+}
+
+.cover-input{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.sm-input{
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+@media (min-width: 768px) and (max-width: 996px){
+    .cover-input{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    .sm-input{
+        margin-bottom: 20px;
+        width: 50%;
+    }
 }

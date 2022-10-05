@@ -25,13 +25,13 @@
                     <div class="col-12 col-sm-10 col-md-10 col-lg-10 header-menu">
                         <ul>
                             <li>
-                                <a href="#" class="">Notícias</a>
+                                <a href="../index.html" class="">Notícias</a>
                             </li>
                             <li>
-                                <a href="#" class="">Reservas</a>
+                                <a href="booking.html" class="">Reservas</a>
                             </li>
                             <li>
-                                <a href="#" class="">Sobre nós</a>
+                                <a href="who-we-are.html" class="">Sobre nós</a>
                             </li>
                         </ul>
                     </div>
@@ -50,22 +50,114 @@
                     </div>
                 </header>
                 <div class="parallax"></div>
-                <section class="row">
-                    <div class="col">
-                        <p class="margin-top20">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut corrupti porro, placeat dicta dolorem, eveniet, eum in eius quam vero reprehenderit consequuntur. Quasi, tempore at impedit ullam harum ratione?
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut corrupti porro, placeat dicta dolorem, eveniet, eum in eius quam vero reprehenderit consequuntur. Quasi, tempore at impedit ullam harum ratione?
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut corrupti porro, placeat dicta dolorem, eveniet, eum in eius quam vero reprehenderit consequuntur. Quasi, tempore at impedit ullam harum ratione?
-                        </p>
-
-                        <p>Telefone: (18) 98765-4321</p>
-                        <p>Whatsapp: (18) 98765-4321</p>
-                        <p><a class="link" href="https://www.hotelmania.com"> Site: Hotelmania.com </a></p>
-                        <p><a class="link" href="https://facebook.com/hotelmania"> Facebook: Hotelmania </a></p>
-                        <p><a class="link" href="https://instagram.com/hotelmania"> Instagram: Hotelmania </a></p>
-                                
+                <form>
+                    <section class="row margin-top20">
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                            <fieldset class="user-basic-info">
+                                <legend>Informações Básicas</legend>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <input type="text" placeholder="Nome" name="name">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <input type="text" placeholder="Sobrenome" name="surname">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="email" placeholder="Email" name="email">
+                                    </div>
+                                </div>
+                                <div class="row radio-input">
+                                    <div class="col-12 ">
+                                        <label for="for-me">
+                                            <input type="radio" name="for-who" id="for-me" value="for-me" checked>
+                                            Para mim
+                                        </label>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="for-other">
+                                            <input type="radio" name="for-who" id="for-other" value="for-other">
+                                            Para outra pessoa
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row arrival-input">
+                                    <div class="col">
+                                        <input type="text" name="arrival-time" placeholder="Horário de chegada" onfocus="(this.type='time')" onblur="(this.type='text')">
+                                    </div>
+                                </div>
+                            </fieldset>
                         </div>
-                </section>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 checkout">
+                            <div class="row">
+                                <div class="col">
+                                    <h1>Reservas</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <h2>Nome hotel</h2>
+                                </div>
+                            </div>
+                            <div class="row new-item">
+                                <div class="col-10 col-sm-10 col-md-12 col-lg-10">
+                                    <p>Descrição da reserva</p>
+                                </div>
+                                <div class="col-2 col-sm-2 col-md-4 col-lg-2">
+                                    <p class="green-text">R$70</p>
+                                </div>
+                            </div>
+                            <div class="row total">
+                                <div class="col-12">
+                                    <p>Total: R$70</p>
+                                    <button class="btn btn-sm btn-outline-wine" type="submit">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 margin-top20">
+                            <fieldset class="payment">
+                                <legend>Pagamento</legend>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="for-me">
+                                            <input type="radio" name="payment-method" id="credit-card" value="credit-card" checked>
+                                            Cartão de Crédito
+                                        </label>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="for-other">
+                                            <input type="radio" name="payment-method" id="debit-card" value="debit-card">
+                                            Cartão de Débito
+                                        </label>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="for-other">
+                                            <input type="radio" name="payment-method" id="paypal" value="paypal">
+                                            Paypal
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <input class="cover-input" type="text" placeholder="Nome no cartão" name="card-name">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <input class="sm-input" type="number" placeholder="Número do cartão" name="card-number">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <input class="sm-input" type="text" placeholder="Data de expiração" name="card-expiration" onfocus="(this.type='date')" onblur="(this.type='text')">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <input class="sm-input" type="number" placeholder="CVV" name="card-cvv">
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </section>
+                </form>
             </div>
         </main>
 
