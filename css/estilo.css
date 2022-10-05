@@ -96,7 +96,7 @@ body{
 
 .margin-top20{
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .link{
@@ -106,6 +106,13 @@ body{
 .link:hover{
     text-decoration: none;
     color: #8A1010;
+}
+
+.blog-img{
+    display: flex;
+    align-self: center;
+    height: 250px;
+    width: 200px;
 }
 
 .filters div{
