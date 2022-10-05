@@ -107,3 +107,76 @@ body{
     text-decoration: none;
     color: #8A1010;
 }
+
+.filters div{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.filters div select{
+    text-align: center;
+    width: 60%;
+}
+
+.filters div input{
+    text-align: center;
+    width: 60%;
+}
+
+@media (min-width: 991px) and (max-width: 1200px){
+    .filters div select{
+        text-align: center;
+        width: 70%;
+    }
+    
+    .filters div input{
+        text-align: center;
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .filters div select{
+        text-align: center;
+        width: 90%;
+    }
+    
+    .filters div input{
+        text-align: center;
+        width: 90%;
+    }
+}
+
+.search-box{
+    text-align: right;
+}
+
+.search-box input{
+    background: url(../img/search-icon.png) no-repeat right;
+    background-size: 10px;
+    padding: 2px;
+}
+
+.search-box div input{
+    width: 40%;
+}
+
+@media (max-width: 768px){
+    .search-box{
+        text-align: center;
+    }
+    .search-box div input{
+        width: 60%;
+    }
+}
+
+.btn-outline-wine{
+    border: #8A1010 solid 1px;
+    color: #8A1010;
+    background-color: transparent;
+}
+
+.btn-outline-wine:hover{
+    color: white;
+    background-color: #8A1010;
+}
